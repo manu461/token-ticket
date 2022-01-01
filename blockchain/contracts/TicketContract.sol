@@ -57,7 +57,7 @@ contract TicketContract is ERC721, Ownable {
          * Default Ticket price in Tokens. Amount of Token that a user has to pay to buy a Ticket from owner.
          * can be updated to a new value by the owner of the smart-contract using the setter function setTicketPrice().
          */
-        ticketPrice = 10;
+        ticketPrice = 100;
 
         /** 
          * Default royalty percentage, Percentage that will go to the owner as royalty for every secondary market trade.
