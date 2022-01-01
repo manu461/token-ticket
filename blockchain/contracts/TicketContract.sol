@@ -5,7 +5,7 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 
-import {Token} from "./1_Token.sol";
+import {TokenContract} from "./TokenContract.sol";
 
 contract TicketContract is ERC721, Ownable {
     using Counters for Counters.Counter;
@@ -18,7 +18,7 @@ contract TicketContract is ERC721, Ownable {
     }
 
     Counters.Counter            private     _tokenIdCounter;
-    Token                       private     token;
+    TokenContract                       private     token;
     address                     private     _owner;
     uint256                     private     remainingTickets;
     uint256                     private     ticketPrice;
@@ -26,7 +26,7 @@ contract TicketContract is ERC721, Ownable {
     uint256[]                   private     ticketsForSale;
     
 
-    constructor(Token tokenAddress) ERC721("ON", "ONFT") {
+    constructor(TokenContract tokenAddress) ERC721("ON", "ONFT") {
         token = tokenAddress;
         _owner = msg.sender;
         remainingTickets  = 1000;
@@ -34,11 +34,11 @@ contract TicketContract is ERC721, Ownable {
         setApprovalForAll(address(this), true);
     }
 
-    function getToken() external view returns (Token) {
+    function getToken() external view returns (TokenContract) {
         return token;
     }
 
-    function setToken(Token tokenAddress) onlyOwner external {
+    function setToken(TokenContract tokenAddress) onlyOwner external {
         token = tokenAddress;
     }
 
