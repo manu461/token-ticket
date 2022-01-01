@@ -38,7 +38,7 @@ contract TicketContract is ERC721, Ownable {
     uint256[]                   private     ticketsForSale;
     
 
-    constructor(TokenContract tokenAddress) ERC721("ON", "ONFT") {
+    constructor(TokenContract tokenAddress) ERC721("NewYear2022FestivalTicket", "TICKET") {
         /** 
          * Default address ERC-20 token that'll be used for payments. 
          * can be updated to a new value by the owner of the smart-contract using the setter function setToken(). 
