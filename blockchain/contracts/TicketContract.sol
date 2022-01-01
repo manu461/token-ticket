@@ -180,7 +180,7 @@ contract TicketContract is ERC721, Ownable {
         require(token.allowance(msg.sender, address(this)) >= amountToPay, "Insufficient Allowance");
 
         // calculate the royalty amount to be paid to the owner.
-        uint256 royaltyAmount = amountToPay * royalityPercentage / 100;
+        uint256 royaltyAmount = amountToPay * royaltyPercentage / 100;
 
         // debit the required TKN amount from msg.sender and credit to the current owner of the Ticket.
         require(token.transferFrom(msg.sender, ticketIdToTicketMapping[ticketId].owner, amountToPay-royaltyAmount), "Token transfer failed");
