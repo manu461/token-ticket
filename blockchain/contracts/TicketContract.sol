@@ -8,8 +8,10 @@ import "@openzeppelin/contracts/utils/Counters.sol";
 import {TokenContract} from "./TokenContract.sol";
 
 /**
- * ERC-721 Smart-Contract to mint, buy, sell an ERC-721 ticket using ERC-20 token.
- * Dependent on TokenContract.sol as it uses that token for payment of the trades of tickets.
+ * @title A non-fungible token that represents ticket for a festival
+ * @author Manu Rastogi
+ * @notice ERC-721 Smart-Contract to mint, buy, sell an ERC-721 ticket using ERC-20 token.
+ * @notice Dependent on TokenContract.sol as it uses that token for payment of the trades of tickets.
  */
 contract TicketContract is ERC721, Ownable {
     /** Ticket id generator -> sequential and starts from value 0 */
@@ -36,6 +38,11 @@ contract TicketContract is ERC721, Ownable {
     /** Array to store ticketId of all those tickets which are on sale in secondary market. */
     uint256[] private ticketsForSale;
 
+    /**
+     * @notice The constructor of the non-fungible token that represents ticket for a festival TokenContract.
+     * @notice Address of the fungible currency token is injected in the constructor.
+     * @param  tokenAddress Address of the fungible currency token TokenContract.
+     */
     constructor(TokenContract tokenAddress) ERC721("FestivalTicket", "TICKET") {
         /**
          * Default address ERC-20 token that'll be used for payments.
@@ -66,22 +73,34 @@ contract TicketContract is ERC721, Ownable {
         setApprovalForAll(address(this), true);
     }
 
-    /** Returns the address of TokenContract. */
+    /**
+     * @notice Returns the address of TokenContract.
+     * @return TokenContract address of TokenContract
+     */
     function getToken() external view returns (TokenContract) {
         return token;
     }
 
-    /** OnlyOwner method to set the address of TokenContract. */
+    /**
+     * @notice OnlyOwner method to set the address of TokenContract.
+     * @param tokenAddress address of TokenContract
+     */
     function setToken(TokenContract tokenAddress) external onlyOwner {
         token = tokenAddress;
     }
 
-    /** Returns the remaining supply of the Tickets. */
+    /**
+     * @notice Returns the remaining supply of the Tickets.
+     * @return uint256 remaining ticket supply.
+     */
     function getRemainingTickets() external view returns (uint256) {
         return remainingTickets;
     }
 
-    /** OnlyOwner method to set the remaining supply of the Tickets. */
+    /**
+     * @notice OnlyOwner method to set the remaining supply of the Tickets.
+     * @param newRemainingTickets new remaining ticket supply.
+     */
     function setRemainingTickets(uint256 newRemainingTickets)
         external
         onlyOwner
@@ -89,22 +108,34 @@ contract TicketContract is ERC721, Ownable {
         remainingTickets = newRemainingTickets;
     }
 
-    /** Returns the Ticket price in Tokens. */
+    /**
+     * @notice Returns the Ticket price in Tokens.
+     * @return uint256 price of a Ticket in terms of TKN token.
+     */
     function getTicketPrice() external view returns (uint256) {
         return ticketPrice;
     }
 
-    /** OnlyOwner method to set the Ticket price in Tokens. */
+    /**
+     * @notice OnlyOwner method to set the Ticket price in Tokens.
+     * @param newTicketPrice new price of a Ticket in terms of TKN token.
+     */
     function setTicketPrice(uint256 newTicketPrice) external onlyOwner {
         ticketPrice = newTicketPrice;
     }
 
-    /** Returns the RoyaltyPercentage set by the owner on every secondary market trade. */
+    /**
+     * @notice Returns the RoyaltyPercentage set by the organizer(owner of TicketContract) on every secondary market trade.
+     * @return uint256 the RoyaltyPercentage value.
+     */
     function getRoyaltyPercentage() external view returns (uint256) {
         return royaltyPercentage;
     }
 
-    /** OnlyOwner method to set the RoyaltyPercentage on every secondary market trade. */
+    /**
+     * @notice OnlyOwner method to set the RoyaltyPercentage on every secondary market trade.
+     * @param newRoyaltyPercentage new value of RoyaltyPercentage.
+     */
     function setRoyaltyPercentage(uint256 newRoyaltyPercentage)
         external
         onlyOwner
@@ -112,12 +143,22 @@ contract TicketContract is ERC721, Ownable {
         royaltyPercentage = newRoyaltyPercentage;
     }
 
-    /** Returns an array containing the IDs of the Tickets which are on sale in secondary market. */
+    /**
+     * @notice Returns an array containing the IDs of the Tickets which are on sale in secondary market.
+     * @return uint256[] array of IDs of the Tickets which are on sale.
+     */
     function getTicketsForSale() external view returns (uint256[] memory) {
         return ticketsForSale;
     }
 
-    /** Internal utility function to intialize a new Ticket object. */
+    /**
+     * @notice Internal utility function to intialize a new Ticket object.
+     * @param owner address of the owner of the Ticket.
+     * @param lastBuyPrice last trade price of the Ticket.
+     * @param sellPrice current sellPrice of the ticket, set 0 if not for sale.
+     * @param sellIndex pointer to the ticketsForSale array index of current ticket if on sale, set -1 if not for sale.
+     * @return Ticket newely intialized Ticket object.
+     */
     function newTicket(
         address owner,
         uint256 lastBuyPrice,
@@ -132,15 +173,21 @@ contract TicketContract is ERC721, Ownable {
         return ticket;
     }
 
-    /** Get Ticket object by TicketId from ticketIdToTicketMapping. */
+    /**
+     * @notice Get Ticket object by TicketId from ticketIdToTicketMapping.
+     * @param ticketId id of a ticket
+     * @return Ticket object by TicketId.
+     */
     function getTicket(uint256 ticketId) external view returns (Ticket memory) {
         return ticketIdToTicketMapping[ticketId];
     }
 
     /**
-     * Payable method to Purchase a ticket from Primary Market (From the owner).
-     * Payment currency is Token TKN, amountToPay TKN should match with ticketPrice.
-     * Must Approve TicketContract to spend msg.sender's TKN tokens before calling this function.
+     * @notice Payable method to Purchase a ticket from Primary Market (From the organizer(owner of TicketContract)).
+     * @notice Payment currency is Token TKN, amountToPay TKN should match with ticketPrice.
+     * @notice Must Approve TicketContract to spend msg.sender's TKN tokens before calling this function.
+     * @param amountToPay amount of TKN tokens that buyer wants to spend to purchase a ticket, value must be equal to the ticketPrice.
+     * @return uint256 tokenId of the newly generated Token.
      */
     function primaryPurchase(uint256 amountToPay)
         public
@@ -159,7 +206,7 @@ contract TicketContract is ERC721, Ownable {
             "Insuficient Allowance"
         );
 
-        // debit the required TKN from msg.sender and credit to owner's account.
+        // debit the required TKN from msg.sender and credit to the account of organizer(owner of TicketContract).
         require(
             token.transferFrom(msg.sender, _owner, amountToPay),
             "transfer Failed"
@@ -181,10 +228,13 @@ contract TicketContract is ERC721, Ownable {
     }
 
     /**
-     * Payable method To purchase a Ticket from secondary market using TKN tokens.
-     * Calculates and pay the royalty to the owner on successful trade.
-     * Debits the required TKN amount from msg.sender account and credits to the owner of Ticket and credits the royalty to the owner of Contract.
-     * Tranfers the ownership of Ticket on Sale from TicketContract to msg.sender.
+     * @notice Payable method To purchase a Ticket from secondary market using TKN tokens.
+     * @notice Calculates and pay the royalty to the organizer(owner of TicketContract) on successful trade.
+     * @notice Debits the required TKN amount from msg.sender account and credits to the owner of Ticket and credits the royalty to the owner of Contract.
+     * @notice Tranfers the ownership of Ticket on Sale from TicketContract to msg.sender.
+     * @param ticketId id of the ticket that a buyer wants to purchase in secondary market.
+     * @param amountToPay amount of TKN tokens that buyer wants to spend to purchase a ticket, value must be equal to the sellPrice set by the seller.
+     * @return bool true if everything went through successfully.
      */
     function secondaryPurchase(uint256 ticketId, uint256 amountToPay)
         public
@@ -209,7 +259,7 @@ contract TicketContract is ERC721, Ownable {
             "Insufficient Allowance"
         );
 
-        // calculate the royalty amount to be paid to the owner.
+        // calculate the royalty amount to be paid to the organizer(owner of TicketContract).
         uint256 royaltyAmount = (amountToPay * royaltyPercentage) / 100;
 
         // debit the required TKN amount from msg.sender and credit to the current owner of the Ticket.
@@ -222,7 +272,7 @@ contract TicketContract is ERC721, Ownable {
             "Token transfer failed"
         );
 
-        // debit the reyality TKN amount  from msg.sender and credit to the owner of the contract.
+        // debit the royalty TKN amount  from msg.sender and credit to the organizer(owner of TicketContract).
         require(
             token.transferFrom(msg.sender, _owner, royaltyAmount),
             "Royalty Token transfer failed"
@@ -246,9 +296,12 @@ contract TicketContract is ERC721, Ownable {
     }
 
     /**
-     * Payable method to Sell a Ticket in the Secondary Market.
-     * Owner of the Ticket can set the askPrice ask price can be no more that 110% of last price (110% hard-coded for now).
-     * Transfers the ownership of the Ticket from its current owner to TicketContract.
+     * @notice Payable method to Sell a Ticket in the Secondary Market.
+     * @notice Owner of the Ticket can set the askPrice ask price can be no more that 110% of last price (110% hard-coded for now).
+     * @notice Transfers the ownership of the Ticket from its current owner to TicketContract.
+     * @param ticketId id of the ticket that an owner(of ticket with that ticketId) wants to sell in the secondary market.
+     * @param askPrice price at which the owner(of the ticket) wants to sell in secondary market, must not be more than 110% of last price (110% hard-coded for now).
+     * @return bool true if everything went through successfully.
      */
     function secondarySell(uint256 ticketId, uint256 askPrice)
         public
@@ -277,7 +330,7 @@ contract TicketContract is ERC721, Ownable {
             ticketsForSale.length - 1
         );
 
-        // transfer the ownership of the Ticket from its current owner to the TicketContract.
+        // transfer the ownership of the Ticket from its current owner to the smart-contract TicketContract.
         ERC721.transferFrom(msg.sender, address(this), ticketId);
 
         return true;
