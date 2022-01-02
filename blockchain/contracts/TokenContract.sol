@@ -4,7 +4,7 @@ pragma solidity ^0.8.2;
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 /**
- * @title A fungible currency token TKN
+ * @title A fungible currency token "TKN"
  * @author Manu Rastogi
  * @notice ERC-20 Smart-Contract to mint an ERC-20 token that'll be used for the payment to buy and trade the TICKET(ERC-721).
  * @notice Name of ERC-20 token is Token, and ticker is TKN.

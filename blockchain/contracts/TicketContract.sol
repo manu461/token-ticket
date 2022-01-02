@@ -39,34 +39,35 @@ contract TicketContract is ERC721, Ownable {
     uint256[] private ticketsForSale;
 
     /**
-     * @notice The constructor of the non-fungible token that represents ticket for a festival TokenContract.
+     * @notice The constructor of the non-fungible token that represents ticket for a festival "TicketContract".
      * @notice Address of the fungible currency token is injected in the constructor.
      * @param  tokenAddress Address of the fungible currency token TokenContract.
      */
     constructor(TokenContract tokenAddress) ERC721("FestivalTicket", "TICKET") {
         /**
-         * Default address ERC-20 token that'll be used for payments.
-         * can be updated to a new value by the owner of the smart-contract using the setter function setToken().
+         * Default initial address of the fungible currency token "TKN".
+         * can be updated to a new value by the organizer(owner of the smart-contract) using the setter function setToken().
          */
         token = tokenAddress;
 
+        /** Deployer account becomes the organizer(owner of the smart-contract) */
         _owner = msg.sender;
 
         /**
          * Default Ticket supply is 1000.
-         * can be updated to a new value by the owner of the smart-contract using the setter function setRemainingTickets().
+         * can be updated to a new value by the organizer(owner of the smart-contract) using the setter function setRemainingTickets().
          */
         remainingTickets = 1000;
 
         /**
-         * Default Ticket price in Tokens. Amount of Token that a user has to pay to buy a Ticket from owner.
-         * can be updated to a new value by the owner of the smart-contract using the setter function setTicketPrice().
+         * Default Ticket price in Tokens. Amount of Token that a user has to pay to buy a Ticket from organizer(owner of the smart-contract).
+         * can be updated to a new value by the organizer(owner of the smart-contract) using the setter function setTicketPrice().
          */
         ticketPrice = 100;
 
         /**
-         * Default royalty percentage, Percentage that will go to the owner as royalty for every secondary market trade.
-         * can be updated to a new value by the owner of the smart-contract using the setter function setRoyaltyPercentage().
+         * Default royalty percentage, Percentage that will go to the organizer(owner of the smart-contract) as royalty for every secondary market trade.
+         * can be updated to a new value by the organizer(owner of the smart-contract) using the setter function setRoyaltyPercentage().
          */
         royaltyPercentage = 1;
 
@@ -75,7 +76,7 @@ contract TicketContract is ERC721, Ownable {
 
     /**
      * @notice Returns the address of TokenContract.
-     * @return TokenContract address of TokenContract
+     * @return address address of TokenContract
      */
     function getToken() external view returns (TokenContract) {
         return token;
@@ -153,11 +154,11 @@ contract TicketContract is ERC721, Ownable {
 
     /**
      * @notice Internal utility function to intialize a new Ticket object.
-     * @param owner address of the owner of the Ticket.
+     * @param owner address of the current owner of the Ticket.
      * @param lastBuyPrice last trade price of the Ticket.
      * @param sellPrice current sellPrice of the ticket, set 0 if not for sale.
      * @param sellIndex pointer to the ticketsForSale array index of current ticket if on sale, set -1 if not for sale.
-     * @return Ticket newely intialized Ticket object.
+     * @return Ticket newly intialized Ticket object.
      */
     function newTicket(
         address owner,
@@ -230,7 +231,7 @@ contract TicketContract is ERC721, Ownable {
     /**
      * @notice Payable method To purchase a Ticket from secondary market using TKN tokens.
      * @notice Calculates and pay the royalty to the organizer(owner of TicketContract) on successful trade.
-     * @notice Debits the required TKN amount from msg.sender account and credits to the owner of Ticket and credits the royalty to the owner of Contract.
+     * @notice Debits the required TKN amount from msg.sender account and credits to the owner of Ticket and credits the royalty to the organizer(owner of TicketContract).
      * @notice Tranfers the ownership of Ticket on Sale from TicketContract to msg.sender.
      * @param ticketId id of the ticket that a buyer wants to purchase in secondary market.
      * @param amountToPay amount of TKN tokens that buyer wants to spend to purchase a ticket, value must be equal to the sellPrice set by the seller.
@@ -281,10 +282,10 @@ contract TicketContract is ERC721, Ownable {
         // transfer the ownership of the Ticket from TicketContract to msg.sender
         _transfer(address(this), msg.sender, ticketId);
 
-        // set the new owner in Ticket struct for further use.
+        // set the new owner of ticket in Ticket struct for further use.
         ticketIdToTicketMapping[ticketId].owner = msg.sender;
 
-        // Since the sale was successful, the sale can be closed, hence set the sellPrice to default 0.
+        // Since the sale was successful, the sale can be closed, hence set the sellPrice to default 0 and sellIndex to -1.
         ticketIdToTicketMapping[ticketId].sellPrice = 0;
         ticketIdToTicketMapping[ticketId].lastBuyPrice = amountToPay;
         delete ticketsForSale[
@@ -308,7 +309,7 @@ contract TicketContract is ERC721, Ownable {
         payable
         returns (bool)
     {
-        // check if msg.sender is the owner of the Ticket.
+        // check if msg.sender is the current owner of the Ticket in the mapping.
         require(
             msg.sender == ticketIdToTicketMapping[ticketId].owner,
             "Invalid Owner"
