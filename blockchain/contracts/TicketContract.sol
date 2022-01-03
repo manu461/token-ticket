@@ -17,6 +17,16 @@ contract TicketContract is ERC721, Ownable {
     /** Ticket id generator -> sequential and starts from value 0 */
     using Counters for Counters.Counter;
 
+    /**
+     * Reentracy Guard Modifier, Prevents Fallback exploits.
+     */
+    bool internal locked;
+    modifier reentrancyGuard() {
+        require(!locked, "No re-entrancy :)");
+        locked = true;
+        _;
+        locked = false;
+    }
     /** Struct to store crucial information about a ticket. */
     struct Ticket {
         address owner;
@@ -193,6 +203,7 @@ contract TicketContract is ERC721, Ownable {
     function primaryPurchase(uint256 amountToPay)
         public
         payable
+        reentrancyGuard
         returns (uint256)
     {
         // check if ticket is available to purchase.
@@ -240,6 +251,7 @@ contract TicketContract is ERC721, Ownable {
     function secondaryPurchase(uint256 ticketId, uint256 amountToPay)
         public
         payable
+        reentrancyGuard
         returns (bool)
     {
         // check if Ticket is for sale by checking if the sellPrice is not set to default 0.
@@ -307,6 +319,7 @@ contract TicketContract is ERC721, Ownable {
     function secondarySell(uint256 ticketId, uint256 askPrice)
         public
         payable
+        reentrancyGuard
         returns (bool)
     {
         // check if msg.sender is the current owner of the Ticket in the mapping.
