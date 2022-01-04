@@ -1,0 +1,280 @@
+<?xml version="1.0" standalone="no"?>
+    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [  <!ENTITY quot "&#34;">  <!ENTITY amp "&#38;">  <!ENTITY apos "&#39;">  <!ENTITY lt "&#60;">  <!ENTITY gt "&#62;">  <!ENTITY nbsp "&#160;">  <!ENTITY iexcl "&#161;">  <!ENTITY cent "&#162;">  <!ENTITY pound "&#163;">  <!ENTITY curren "&#164;">  <!ENTITY yen "&#165;">  <!ENTITY brvbar "&#166;">  <!ENTITY sect "&#167;">  <!ENTITY uml "&#168;">  <!ENTITY copy "&#169;">  <!ENTITY ordf "&#170;">  <!ENTITY laquo "&#171;">  <!ENTITY not "&#172;">  <!ENTITY shy "&#173;">  <!ENTITY reg "&#174;">  <!ENTITY macr "&#175;">  <!ENTITY deg "&#176;">  <!ENTITY plusmn "&#177;">  <!ENTITY sup2 "&#178;">  <!ENTITY sup3 "&#179;">  <!ENTITY acute "&#180;">  <!ENTITY micro "&#181;">  <!ENTITY para "&#182;">  <!ENTITY middot "&#183;">  <!ENTITY cedil "&#184;">  <!ENTITY sup1 "&#185;">  <!ENTITY ordm "&#186;">  <!ENTITY raquo "&#187;">  <!ENTITY frac14 "&#188;">  <!ENTITY frac12 "&#189;">  <!ENTITY frac34 "&#190;">  <!ENTITY iquest "&#191;">  <!ENTITY Agrave "&#192;">  <!ENTITY Aacute "&#193;">  <!ENTITY Acirc "&#194;">  <!ENTITY Atilde "&#195;">  <!ENTITY Auml "&#196;">  <!ENTITY Aring "&#197;">  <!ENTITY AElig "&#198;">  <!ENTITY Ccedil "&#199;">  <!ENTITY Egrave "&#200;">  <!ENTITY Eacute "&#201;">  <!ENTITY Ecirc "&#202;">  <!ENTITY Euml "&#203;">  <!ENTITY Igrave "&#204;">  <!ENTITY Iacute "&#205;">  <!ENTITY Icirc "&#206;">  <!ENTITY Iuml "&#207;">  <!ENTITY ETH "&#208;">  <!ENTITY Ntilde "&#209;">  <!ENTITY Ograve "&#210;">  <!ENTITY Oacute "&#211;">  <!ENTITY Ocirc "&#212;">  <!ENTITY Otilde "&#213;">  <!ENTITY Ouml "&#214;">  <!ENTITY times "&#215;">  <!ENTITY Oslash "&#216;">  <!ENTITY Ugrave "&#217;">  <!ENTITY Uacute "&#218;">  <!ENTITY Ucirc "&#219;">  <!ENTITY Uuml "&#220;">  <!ENTITY Yacute "&#221;">  <!ENTITY THORN "&#222;">  <!ENTITY szlig "&#223;">  <!ENTITY agrave "&#224;">  <!ENTITY aacute "&#225;">  <!ENTITY acirc "&#226;">  <!ENTITY atilde "&#227;">  <!ENTITY auml "&#228;">  <!ENTITY aring "&#229;">  <!ENTITY aelig "&#230;">  <!ENTITY ccedil "&#231;">  <!ENTITY egrave "&#232;">  <!ENTITY eacute "&#233;">  <!ENTITY ecirc "&#234;">  <!ENTITY euml "&#235;">  <!ENTITY igrave "&#236;">  <!ENTITY iacute "&#237;">  <!ENTITY icirc "&#238;">  <!ENTITY iuml "&#239;">  <!ENTITY eth "&#240;">  <!ENTITY ntilde "&#241;">  <!ENTITY ograve "&#242;">  <!ENTITY oacute "&#243;">  <!ENTITY ocirc "&#244;">  <!ENTITY otilde "&#245;">  <!ENTITY ouml "&#246;">  <!ENTITY divide "&#247;">  <!ENTITY oslash "&#248;">  <!ENTITY ugrave "&#249;">  <!ENTITY uacute "&#250;">  <!ENTITY ucirc "&#251;">  <!ENTITY uuml "&#252;">  <!ENTITY yacute "&#253;">  <!ENTITY thorn "&#254;">  <!ENTITY yuml "&#255;">  <!ENTITY OElig "&#338;">  <!ENTITY oelig "&#339;">  <!ENTITY Scaron "&#352;">  <!ENTITY scaron "&#353;">  <!ENTITY Yuml "&#376;">  <!ENTITY fnof "&#402;">  <!ENTITY circ "&#710;">  <!ENTITY tilde "&#732;">  <!ENTITY Alpha "&#913;">  <!ENTITY Beta "&#914;">  <!ENTITY Gamma "&#915;">  <!ENTITY Delta "&#916;">  <!ENTITY Epsilon "&#917;">  <!ENTITY Zeta "&#918;">  <!ENTITY Eta "&#919;">  <!ENTITY Theta "&#920;">  <!ENTITY Iota "&#921;">  <!ENTITY Kappa "&#922;">  <!ENTITY Lambda "&#923;">  <!ENTITY Mu "&#924;">  <!ENTITY Nu "&#925;">  <!ENTITY Xi "&#926;">  <!ENTITY Omicron "&#927;">  <!ENTITY Pi "&#928;">  <!ENTITY Rho "&#929;">  <!ENTITY Sigma "&#931;">  <!ENTITY Tau "&#932;">  <!ENTITY Upsilon "&#933;">  <!ENTITY Phi "&#934;">  <!ENTITY Chi "&#935;">  <!ENTITY Psi "&#936;">  <!ENTITY Omega "&#937;">  <!ENTITY alpha "&#945;">  <!ENTITY beta "&#946;">  <!ENTITY gamma "&#947;">  <!ENTITY delta "&#948;">  <!ENTITY epsilon "&#949;">  <!ENTITY zeta "&#950;">  <!ENTITY eta "&#951;">  <!ENTITY theta "&#952;">  <!ENTITY iota "&#953;">  <!ENTITY kappa "&#954;">  <!ENTITY lambda "&#955;">  <!ENTITY mu "&#956;">  <!ENTITY nu "&#957;">  <!ENTITY xi "&#958;">  <!ENTITY omicron "&#959;">  <!ENTITY pi "&#960;">  <!ENTITY rho "&#961;">  <!ENTITY sigmaf "&#962;">  <!ENTITY sigma "&#963;">  <!ENTITY tau "&#964;">  <!ENTITY upsilon "&#965;">  <!ENTITY phi "&#966;">  <!ENTITY chi "&#967;">  <!ENTITY psi "&#968;">  <!ENTITY omega "&#969;">  <!ENTITY thetasym "&#977;">  <!ENTITY upsih "&#978;">  <!ENTITY piv "&#982;">  <!ENTITY ensp "&#8194;">  <!ENTITY emsp "&#8195;">  <!ENTITY thinsp "&#8201;">  <!ENTITY zwnj "&#8204;">  <!ENTITY zwj "&#8205;">  <!ENTITY lrm "&#8206;">  <!ENTITY rlm "&#8207;">  <!ENTITY ndash "&#8211;">  <!ENTITY mdash "&#8212;">  <!ENTITY lsquo "&#8216;">  <!ENTITY rsquo "&#8217;">  <!ENTITY sbquo "&#8218;">  <!ENTITY ldquo "&#8220;">  <!ENTITY rdquo "&#8221;">  <!ENTITY bdquo "&#8222;">  <!ENTITY dagger "&#8224;">  <!ENTITY Dagger "&#8225;">  <!ENTITY bull "&#8226;">  <!ENTITY hellip "&#8230;">  <!ENTITY permil "&#8240;">  <!ENTITY prime "&#8242;">  <!ENTITY Prime "&#8243;">  <!ENTITY lsaquo "&#8249;">  <!ENTITY rsaquo "&#8250;">  <!ENTITY oline "&#8254;">  <!ENTITY frasl "&#8260;">  <!ENTITY euro "&#8364;">  <!ENTITY image "&#8465;">  <!ENTITY weierp "&#8472;">  <!ENTITY real "&#8476;">  <!ENTITY trade "&#8482;">  <!ENTITY alefsym "&#8501;">  <!ENTITY larr "&#8592;">  <!ENTITY uarr "&#8593;">  <!ENTITY rarr "&#8594;">  <!ENTITY darr "&#8595;">  <!ENTITY harr "&#8596;">  <!ENTITY crarr "&#8629;">  <!ENTITY lArr "&#8656;">  <!ENTITY uArr "&#8657;">  <!ENTITY rArr "&#8658;">  <!ENTITY dArr "&#8659;">  <!ENTITY hArr "&#8660;">  <!ENTITY forall "&#8704;">  <!ENTITY part "&#8706;">  <!ENTITY exist "&#8707;">  <!ENTITY empty "&#8709;">  <!ENTITY nabla "&#8711;">  <!ENTITY isin "&#8712;">  <!ENTITY notin "&#8713;">  <!ENTITY ni "&#8715;">  <!ENTITY prod "&#8719;">  <!ENTITY sum "&#8721;">  <!ENTITY minus "&#8722;">  <!ENTITY lowast "&#8727;">  <!ENTITY radic "&#8730;">  <!ENTITY prop "&#8733;">  <!ENTITY infin "&#8734;">  <!ENTITY ang "&#8736;">  <!ENTITY and "&#8743;">  <!ENTITY or "&#8744;">  <!ENTITY cap "&#8745;">  <!ENTITY cup "&#8746;">  <!ENTITY int "&#8747;">  <!ENTITY there4 "&#8756;">  <!ENTITY sim "&#8764;">  <!ENTITY cong "&#8773;">  <!ENTITY asymp "&#8776;">  <!ENTITY ne "&#8800;">  <!ENTITY equiv "&#8801;">  <!ENTITY le "&#8804;">  <!ENTITY ge "&#8805;">  <!ENTITY sub "&#8834;">  <!ENTITY sup "&#8835;">  <!ENTITY nsub "&#8836;">  <!ENTITY sube "&#8838;">  <!ENTITY supe "&#8839;">  <!ENTITY oplus "&#8853;">  <!ENTITY otimes "&#8855;">  <!ENTITY perp "&#8869;">  <!ENTITY sdot "&#8901;">  <!ENTITY lceil "&#8968;">  <!ENTITY rceil "&#8969;">  <!ENTITY lfloor "&#8970;">  <!ENTITY rfloor "&#8971;">  <!ENTITY lang "&#9001;">  <!ENTITY rang "&#9002;">  <!ENTITY loz "&#9674;">  <!ENTITY spades "&#9824;">  <!ENTITY clubs "&#9827;">  <!ENTITY hearts "&#9829;">  <!ENTITY diams "&#9830;"> ]><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="436pt" height="1365pt" viewBox="0.00 0.00 435.51 1365.00">
+<g id="graph0" class="graph" transform="translate(4,1361) scale(1)" data-name="G">
+
+<polygon fill="#2e3e56" stroke="transparent" points="-4,4 -4,-1361 431.5109,-1361 431.5109,4 -4,4" style=""></polygon>
+<g id="clust1" class="cluster">
+<title style="">clusterTicketContract</title>
+<path fill="#445773" stroke="#445773" d="M20,-371C20,-371 407.5109,-371 407.5109,-371 413.5109,-371 419.5109,-377 419.5109,-383 419.5109,-383 419.5109,-1200 419.5109,-1200 419.5109,-1206 413.5109,-1212 407.5109,-1212 407.5109,-1212 20,-1212 20,-1212 14,-1212 8,-1206 8,-1200 8,-1200 8,-383 8,-383 8,-377 14,-371 20,-371" style=""></path>
+<text text-anchor="middle" x="213.7555" y="-1195.4" font-family="Times,serif" font-size="14.00" fill="#f0f0f0" style="">TicketContract</text>
+</g>
+<g id="clust2" class="cluster">
+<title style="">clusterTokenContract</title>
+<path fill="#3b4b63" stroke="#e8726d" stroke-dasharray="5,2" d="M270.082,-232C270.082,-232 384.9736,-232 384.9736,-232 390.9736,-232 396.9736,-238 396.9736,-244 396.9736,-244 396.9736,-351 396.9736,-351 396.9736,-357 390.9736,-363 384.9736,-363 384.9736,-363 270.082,-363 270.082,-363 264.082,-363 258.082,-357 258.082,-351 258.082,-351 258.082,-244 258.082,-244 258.082,-238 264.082,-232 270.082,-232" style=""></path>
+<text text-anchor="middle" x="327.5278" y="-346.4" font-family="Times,serif" font-size="14.00" fill="#f0f0f0" style="">TokenContract</text>
+</g>
+<g id="clust3" class="cluster">
+<title style="">clusterCounters.Counter</title>
+<path fill="#3b4b63" stroke="#e8726d" stroke-dasharray="5,2" d="M281.8799,-93C281.8799,-93 373.1757,-93 373.1757,-93 379.1757,-93 385.1757,-99 385.1757,-105 385.1757,-105 385.1757,-212 385.1757,-212 385.1757,-218 379.1757,-224 373.1757,-224 373.1757,-224 281.8799,-224 281.8799,-224 275.8799,-224 269.8799,-218 269.8799,-212 269.8799,-212 269.8799,-105 269.8799,-105 269.8799,-99 275.8799,-93 281.8799,-93" style=""></path>
+<text text-anchor="middle" x="327.5278" y="-207.4" font-family="Times,serif" font-size="14.00" fill="#f0f0f0" style="">Counters.Counter</text>
+</g>
+<g id="clust4" class="cluster">
+<title style="">clusterERC721</title>
+<path fill="#3b4b63" stroke="#e8726d" stroke-dasharray="5,2" d="M270.082,-8C270.082,-8 384.9736,-8 384.9736,-8 390.9736,-8 396.9736,-14 396.9736,-20 396.9736,-20 396.9736,-73 396.9736,-73 396.9736,-79 390.9736,-85 384.9736,-85 384.9736,-85 270.082,-85 270.082,-85 264.082,-85 258.082,-79 258.082,-73 258.082,-73 258.082,-20 258.082,-20 258.082,-14 264.082,-8 270.082,-8" style=""></path>
+<text text-anchor="middle" x="327.5278" y="-68.4" font-family="Times,serif" font-size="14.00" fill="#f0f0f0" style="">ERC721</text>
+</g>
+<g id="clust5" class="cluster">
+<title style="">cluster_01</title>
+<polygon fill="#2e3e56" stroke="#000000" points="38.7723,-1220 38.7723,-1349 362.5278,-1349 362.5278,-1220 38.7723,-1220" style=""></polygon>
+<text text-anchor="middle" x="200.6501" y="-1332.4" font-family="Times,serif" font-size="14.00" fill="#000000" style="">Legend</text>
+</g>
+<!-- TicketContract.reentrancyGuard -->
+<g id="node1" class="node" data-name="TicketContract.reentrancyGuard">
+
+<polygon fill="#edad56" stroke="#1bc6a6" stroke-width="3" points="194.0977,-1149.5442 194.0977,-1164.4558 145.8726,-1175 77.672,-1175 29.4469,-1164.4558 29.4469,-1149.5442 77.672,-1139 145.8726,-1139 194.0977,-1149.5442" style=""></polygon>
+<polygon fill="none" stroke="#1bc6a6" stroke-width="3" points="198.1055,-1146.3256 198.1055,-1167.6744 146.3065,-1179 77.2382,-1179 25.4392,-1167.6744 25.4392,-1146.3256 77.2382,-1135 146.3065,-1135 198.1055,-1146.3256" style=""></polygon>
+<text text-anchor="middle" x="111.7723" y="-1152.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">reentrancyGuard</text>
+</g>
+<!-- TicketContract.&lt;Constructor&gt; -->
+<g id="node2" class="node" data-name="TicketContract.&lt;Constructor&gt;">
+
+<ellipse fill="#ff9797" stroke="#ff9797" stroke-width="3" cx="111.7723" cy="-1099" rx="67.5419" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="111.7723" y="-1094.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">&lt;Constructor&gt;</text>
+</g>
+<!-- TicketContract.setApprovalForAll -->
+<g id="node17" class="node" data-name="TicketContract.setApprovalForAll">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="327.5278" cy="-1099" rx="83.9663" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="327.5278" y="-1094.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">setApprovalForAll</text>
+</g>
+<!-- TicketContract.&lt;Constructor&gt;&#45;&gt;TicketContract.setApprovalForAll -->
+<g id="edge1" class="edge" data-name="TicketContract.&lt;Constructor&gt;->TicketContract.setApprovalForAll">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M179.4467,-1099C196.5474,-1099 215.2209,-1099 233.368,-1099" style=""></path>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="233.3823,-1102.5001 243.3822,-1099 233.3822,-1095.5001 233.3823,-1102.5001" style=""></polygon>
+</g>
+<!-- TicketContract.getToken -->
+<g id="node3" class="node" data-name="TicketContract.getToken">
+
+<ellipse fill="#ffbdb9" stroke="#ffbdb9" stroke-width="3" cx="111.7723" cy="-1045" rx="47.5139" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="111.7723" y="-1040.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">getToken</text>
+</g>
+<!-- TicketContract.setToken -->
+<g id="node4" class="node" data-name="TicketContract.setToken">
+
+<ellipse fill="#ffbdb9" stroke="#ffbdb9" stroke-width="3" cx="111.7723" cy="-991" rx="46.3682" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="111.7723" y="-986.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">setToken</text>
+</g>
+<!-- TicketContract.getRemainingTickets -->
+<g id="node5" class="node" data-name="TicketContract.getRemainingTickets">
+
+<ellipse fill="#ffbdb9" stroke="#ffbdb9" stroke-width="3" cx="111.7723" cy="-937" rx="93.7765" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="111.7723" y="-932.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">getRemainingTickets</text>
+</g>
+<!-- TicketContract.setRemainingTickets -->
+<g id="node6" class="node" data-name="TicketContract.setRemainingTickets">
+
+<ellipse fill="#ffbdb9" stroke="#ffbdb9" stroke-width="3" cx="111.7723" cy="-883" rx="92.6306" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="111.7723" y="-878.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">setRemainingTickets</text>
+</g>
+<!-- TicketContract.getTicketPrice -->
+<g id="node7" class="node" data-name="TicketContract.getTicketPrice">
+
+<ellipse fill="#ffbdb9" stroke="#ffbdb9" stroke-width="3" cx="111.7723" cy="-829" rx="67.1888" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="111.7723" y="-824.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">getTicketPrice</text>
+</g>
+<!-- TicketContract.setTicketPrice -->
+<g id="node8" class="node" data-name="TicketContract.setTicketPrice">
+
+<ellipse fill="#ffbdb9" stroke="#ffbdb9" stroke-width="3" cx="111.7723" cy="-775" rx="66.0435" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="111.7723" y="-770.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">setTicketPrice</text>
+</g>
+<!-- TicketContract.getRoyaltyPercentage -->
+<g id="node9" class="node" data-name="TicketContract.getRoyaltyPercentage">
+
+<ellipse fill="#ffbdb9" stroke="#ffbdb9" stroke-width="3" cx="111.7723" cy="-721" rx="95.5452" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="111.7723" y="-716.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">getRoyaltyPercentage</text>
+</g>
+<!-- TicketContract.setRoyaltyPercentage -->
+<g id="node10" class="node" data-name="TicketContract.setRoyaltyPercentage">
+
+<ellipse fill="#ffbdb9" stroke="#ffbdb9" stroke-width="3" cx="111.7723" cy="-667" rx="94.8993" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="111.7723" y="-662.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">setRoyaltyPercentage</text>
+</g>
+<!-- TicketContract.getTicketsForSale -->
+<g id="node11" class="node" data-name="TicketContract.getTicketsForSale">
+
+<ellipse fill="#ffbdb9" stroke="#ffbdb9" stroke-width="3" cx="111.7723" cy="-613" rx="81.0937" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="111.7723" y="-608.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">getTicketsForSale</text>
+</g>
+<!-- TicketContract.newTicket -->
+<g id="node12" class="node" data-name="TicketContract.newTicket">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="327.5278" cy="-397" rx="51.5843" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="327.5278" y="-392.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">newTicket</text>
+</g>
+<!-- TicketContract.getTicket -->
+<g id="node13" class="node" data-name="TicketContract.getTicket">
+
+<ellipse fill="#ffbdb9" stroke="#ffbdb9" stroke-width="3" cx="111.7723" cy="-559" rx="47.5081" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="111.7723" y="-554.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">getTicket</text>
+</g>
+<!-- TicketContract.primaryPurchase -->
+<g id="node14" class="node" data-name="TicketContract.primaryPurchase">
+
+<ellipse fill="#ff9797" stroke="#a52a2a" stroke-width="3" cx="111.7723" cy="-451" rx="76.4227" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="111.7723" y="-446.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">primaryPurchase</text>
+</g>
+<!-- TicketContract.primaryPurchase&#45;&gt;TicketContract.newTicket -->
+<g id="edge7" class="edge" data-name="TicketContract.primaryPurchase->TicketContract.newTicket">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M164.2762,-437.8592C197.9623,-429.4281 241.5318,-418.5234 275.1862,-410.1002" style=""></path>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="276.4394,-413.3946 285.2904,-407.5713 274.7398,-406.6041 276.4394,-413.3946" style=""></polygon>
+</g>
+<!-- TicketContract._safeMint -->
+<g id="node18" class="node" data-name="TicketContract._safeMint">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="327.5278" cy="-451" rx="50.378" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="327.5278" y="-446.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">_safeMint</text>
+</g>
+<!-- TicketContract.primaryPurchase&#45;&gt;TicketContract._safeMint -->
+<g id="edge6" class="edge" data-name="TicketContract.primaryPurchase->TicketContract._safeMint">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M188.4471,-451C214.2006,-451 242.55,-451 266.8978,-451" style=""></path>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="267.0683,-454.5001 277.0683,-451 267.0683,-447.5001 267.0683,-454.5001" style=""></polygon>
+</g>
+<!-- TokenContract.allowance -->
+<g id="node20" class="node" data-name="TokenContract.allowance">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="327.5278" cy="-258" rx="50.3586" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="327.5278" y="-253.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">allowance</text>
+</g>
+<!-- TicketContract.primaryPurchase&#45;&gt;TokenContract.allowance -->
+<g id="edge2" class="edge" data-name="TicketContract.primaryPurchase->TokenContract.allowance">
+
+<path fill="none" stroke="#ffffff" stroke-width="2" d="M178.5499,-441.923C189.3401,-437.8891 199.569,-432.1479 207.5447,-424 252.1849,-378.3958 199.7388,-331.4062 243.5447,-285 250.8743,-277.2353 260.4405,-271.6973 270.4815,-267.7491" style=""></path>
+<polygon fill="#ffffff" stroke="#ffffff" stroke-width="2" points="271.865,-270.9752 280.1964,-264.43 269.6018,-264.3511 271.865,-270.9752" style=""></polygon>
+</g>
+<!-- TokenContract.transferFrom -->
+<g id="node21" class="node" data-name="TokenContract.transferFrom">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="327.5278" cy="-312" rx="61.3916" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="327.5278" y="-307.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">transferFrom</text>
+</g>
+<!-- TicketContract.primaryPurchase&#45;&gt;TokenContract.transferFrom -->
+<g id="edge3" class="edge" data-name="TicketContract.primaryPurchase->TokenContract.transferFrom">
+
+<path fill="none" stroke="#ffffff" stroke-width="2" d="M174.1304,-440.5718C185.9709,-436.6797 197.7149,-431.336 207.5447,-424 231.5575,-406.079 222.5331,-388.361 243.5447,-367 256.52,-353.8089 273.1769,-342.0997 288.2303,-332.912" style=""></path>
+<polygon fill="#ffffff" stroke="#ffffff" stroke-width="2" points="290.0438,-335.9057 296.8682,-327.8016 286.4795,-329.8811 290.0438,-335.9057" style=""></polygon>
+</g>
+<!-- Counters.Counter.current -->
+<g id="node22" class="node" data-name="Counters.Counter.current">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="327.5278" cy="-173" rx="38.2607" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="327.5278" y="-168.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">current</text>
+</g>
+<!-- TicketContract.primaryPurchase&#45;&gt;Counters.Counter.current -->
+<g id="edge4" class="edge" data-name="TicketContract.primaryPurchase->Counters.Counter.current">
+
+<path fill="none" stroke="#ffffff" stroke-width="2" d="M179.0415,-442.3873C189.7817,-438.3061 199.8665,-432.4288 207.5447,-424 267.1886,-358.5252 194.54,-301.7759 243.5447,-228 254.6104,-211.3407 272.6299,-198.5655 289.1458,-189.5396" style=""></path>
+<polygon fill="#ffffff" stroke="#ffffff" stroke-width="2" points="290.8329,-192.6076 298.1129,-184.9101 287.6216,-186.3877 290.8329,-192.6076" style=""></polygon>
+</g>
+<!-- Counters.Counter.increment -->
+<g id="node23" class="node" data-name="Counters.Counter.increment">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="327.5278" cy="-119" rx="49.7962" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="327.5278" y="-114.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">increment</text>
+</g>
+<!-- TicketContract.primaryPurchase&#45;&gt;Counters.Counter.increment -->
+<g id="edge5" class="edge" data-name="TicketContract.primaryPurchase->Counters.Counter.increment">
+
+<path fill="none" stroke="#ffffff" stroke-width="2" d="M179.9,-442.5295C190.4181,-438.4213 200.2049,-432.498 207.5447,-424 288.9808,-329.7125 163.8317,-241.7487 243.5447,-146 250.5219,-137.6192 260.1148,-131.8117 270.3287,-127.7943" style=""></path>
+<polygon fill="#ffffff" stroke="#ffffff" stroke-width="2" points="271.4723,-131.1024 279.826,-124.5858 269.2318,-124.4706 271.4723,-131.1024" style=""></polygon>
+</g>
+<!-- TicketContract.secondaryPurchase -->
+<g id="node15" class="node" data-name="TicketContract.secondaryPurchase">
+
+<ellipse fill="#ff9797" stroke="#a52a2a" stroke-width="3" cx="111.7723" cy="-505" rx="85.0734" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="111.7723" y="-500.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">secondaryPurchase</text>
+</g>
+<!-- TicketContract._transfer -->
+<g id="node19" class="node" data-name="TicketContract._transfer">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="327.5278" cy="-505" rx="45.2015" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="327.5278" y="-500.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">_transfer</text>
+</g>
+<!-- TicketContract.secondaryPurchase&#45;&gt;TicketContract._transfer -->
+<g id="edge11" class="edge" data-name="TicketContract.secondaryPurchase->TicketContract._transfer">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M197.0446,-505C222.1721,-505 249.0127,-505 271.7767,-505" style=""></path>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="271.9282,-508.5001 281.9282,-505 271.9282,-501.5001 271.9282,-508.5001" style=""></polygon>
+</g>
+<!-- TicketContract.secondaryPurchase&#45;&gt;TokenContract.allowance -->
+<g id="edge8" class="edge" data-name="TicketContract.secondaryPurchase->TokenContract.allowance">
+
+<path fill="none" stroke="#ffffff" stroke-width="2" d="M182.8967,-494.806C192.1753,-490.8294 200.787,-485.3978 207.5447,-478 266.3947,-413.5756 185.8726,-350.481 243.5447,-285 250.602,-276.9871 260.0443,-271.3361 270.049,-267.3548" style=""></path>
+<polygon fill="#ffffff" stroke="#ffffff" stroke-width="2" points="271.4301,-270.5813 279.7541,-264.0267 269.1594,-263.9598 271.4301,-270.5813" style=""></polygon>
+</g>
+<!-- TicketContract.secondaryPurchase&#45;&gt;TokenContract.transferFrom -->
+<g id="edge9" class="edge" data-name="TicketContract.secondaryPurchase->TokenContract.transferFrom">
+
+<path fill="none" stroke="#ffffff" stroke-width="2" d="M165.2253,-490.9378C180.4998,-486.6037 196.0904,-480.0179 207.5447,-469 244.9225,-433.0462 212.0628,-399.2149 243.5447,-358 251.891,-347.0733 263.0688,-337.6579 274.5403,-330.1234" style=""></path>
+<polygon fill="#ffffff" stroke="#ffffff" stroke-width="2" points="276.6329,-332.946 283.3279,-324.7345 272.9735,-326.9786 276.6329,-332.946" style=""></polygon>
+</g>
+<!-- TicketContract.secondaryPurchase&#45;&gt;TokenContract.transferFrom -->
+<g id="edge10" class="edge" data-name="TicketContract.secondaryPurchase->TokenContract.transferFrom">
+
+<path fill="none" stroke="#ffffff" stroke-width="2" d="M191.548,-498.479C197.3768,-495.3456 202.8135,-491.5509 207.5447,-487 244.9225,-451.0462 212.0628,-417.2149 243.5447,-376 257.1486,-358.1903 278.2748,-344.3956 295.9343,-333.9354" style=""></path>
+<polygon fill="#ffffff" stroke="#ffffff" stroke-width="2" points="297.9214,-336.8282 304.7949,-328.7656 294.3937,-330.7821 297.9214,-336.8282" style=""></polygon>
+</g>
+<!-- TicketContract.secondarySell -->
+<g id="node16" class="node" data-name="TicketContract.secondarySell">
+
+<ellipse fill="#ff9797" stroke="#a52a2a" stroke-width="3" cx="111.7723" cy="-397" rx="65.4072" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="111.7723" y="-392.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">secondarySell</text>
+</g>
+<!-- ERC721.transferFrom -->
+<g id="node24" class="node" data-name="ERC721.transferFrom">
+
+<ellipse fill="#edad56" stroke="#edad56" stroke-width="3" cx="327.5278" cy="-34" rx="61.3916" ry="18" style=""></ellipse>
+<text text-anchor="middle" x="327.5278" y="-29.8" font-family="Times,serif" font-size="14.00" fill="#000000" style="">transferFrom</text>
+</g>
+<!-- TicketContract.secondarySell&#45;&gt;ERC721.transferFrom -->
+<g id="edge12" class="edge" data-name="TicketContract.secondarySell->ERC721.transferFrom">
+
+<path fill="none" stroke="#ffffff" stroke-width="2" d="M115.6529,-378.7223C127.2272,-327.7938 165.6441,-181.9333 243.5447,-89 255.1346,-75.1735 271.0833,-63.5359 285.9707,-54.5778" style=""></path>
+<polygon fill="#ffffff" stroke="#ffffff" stroke-width="2" points="288.1327,-57.3718 295.0546,-49.3507 284.6415,-51.3046 288.1327,-57.3718" style=""></polygon>
+</g>
+<!-- key -->
+<g id="node25" class="node" data-name="key">
+
+<polygon fill="#edad56" stroke="transparent" stroke-width="3" points="176.7723,-1316 46.7723,-1316 46.7723,-1228 176.7723,-1228 176.7723,-1316" style=""></polygon>
+<text text-anchor="start" x="96.4083" y="-1297.4" font-family="Times,serif" font-size="14.00" fill="#000000" style="">Internal Call</text>
+<text text-anchor="start" x="92.5163" y="-1277.4" font-family="Times,serif" font-size="14.00" fill="#000000" style="">External Call</text>
+<text text-anchor="start" x="69.9777" y="-1257.4" font-family="Times,serif" font-size="14.00" fill="#000000" style="">Defined Contract</text>
+<text text-anchor="start" x="56.375" y="-1237.4" font-family="Times,serif" font-size="14.00" fill="#000000" style="">Undefined Contract</text>
+</g>
+<!-- key2 -->
+<g id="node26" class="node" data-name="key2">
+
+<polygon fill="#edad56" stroke="transparent" stroke-width="3" points="354.5278,-1316 300.5278,-1316 300.5278,-1228 354.5278,-1228 354.5278,-1316" style=""></polygon>
+<text text-anchor="start" x="315.2869" y="-1297.4" font-family="Times,serif" font-size="14.00" fill="#000000" style="">&nbsp;&nbsp;&nbsp;</text>
+<text text-anchor="start" x="315.2869" y="-1277.4" font-family="Times,serif" font-size="14.00" fill="#000000" style="">&nbsp;&nbsp;&nbsp;</text>
+<polygon fill="#445773" stroke="transparent" points="313.5278,-1252 313.5278,-1272 341.5278,-1272 341.5278,-1252 313.5278,-1252" style=""></polygon>
+<text text-anchor="start" x="315.2869" y="-1257.4" font-family="Times,serif" font-size="14.00" fill="#000000" style="">&nbsp;&nbsp;&nbsp;</text>
+<polygon fill="none" stroke="#e8726d" points="315.5278,-1234 315.5278,-1250 339.5278,-1250 339.5278,-1234 315.5278,-1234" style=""></polygon>
+</g>
+<!-- key&#45;&gt;key2 -->
+<g id="edge13" class="edge" data-name="key->key2">
+
+<path fill="none" stroke="#1bc6a6" stroke-width="2" d="M168.7723,-1302C229.5897,-1302 247.2886,-1302 303.3899,-1302" style=""></path>
+<polygon fill="#1bc6a6" stroke="#1bc6a6" stroke-width="2" points="303.5278,-1305.5001 313.5278,-1302 303.5278,-1298.5001 303.5278,-1305.5001" style=""></polygon>
+</g>
+<!-- key&#45;&gt;key2 -->
+<g id="edge14" class="edge" data-name="key->key2">
+
+<path fill="none" stroke="#ffffff" stroke-width="2" d="M168.7723,-1282C229.5897,-1282 247.2886,-1282 303.3899,-1282" style=""></path>
+<polygon fill="#ffffff" stroke="#ffffff" stroke-width="2" points="303.5278,-1285.5001 313.5278,-1282 303.5278,-1278.5001 303.5278,-1285.5001" style=""></polygon>
+</g>
+</g>
+</svg>
