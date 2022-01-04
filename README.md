@@ -8,12 +8,11 @@
 5. RUN `build`
 6. RUN `migrate`
 
----
+
 ## Call Graph TokenContract
 ![Call Graph TokenContract](.artifacts/callGraph_tokenContract.svg)
 
 
----
 ## Call Graph TicketContract
 ![Call Graph TicketContract](.artifacts/callGraph_ticketContract.svg)
 
@@ -41,5 +40,12 @@ c3da02bc  =>  primaryPurchase(uint256)
 4f279937  =>  secondarySell(uint256,uint256)
 ```
 
----
+## Contract Interaction Graph Token-Ticket
+![Contract Interaction Graph](.artifacts/contractInteractionGraph.svg)
+
+
+## Inheritance Graph Token-Ticket
+![Inheritance Graph](.artifacts/inheritanceGraph.svg)
+
+
 @Author: Manu Rastogi
